@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>&#xC5ED;&#xC0AC;&#xBE44;&#xAD50;&#xC5B8;&#xC5B4;&#xD559; &#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xD504;&#xB85C;&#xC81D;&#xD2B8; - H-side</title>
+        <style>
+/* From extension vscode.github */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+.vscode-dark img[src$=\#gh-light-mode-only],
+.vscode-light img[src$=\#gh-dark-mode-only] {
+	display: none;
+}
+
+</style>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+<style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        
+        
+        
+    </head>
+    <body class="vscode-body vscode-light">
+        <h1 id="역사비교언어학-프로그램-프로젝트---h-side">역사비교언어학 프로그램 프로젝트 - H-side</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">작성자</th>
+<th style="text-align:center">문의 이메일</th>
+<th style="text-align:center">라이센스</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">강민하</td>
+<td style="text-align:center"><a href="mailto:alsgk1123@gmail.com">alsgk1123@gmail.com</a></td>
+<td style="text-align:center">MIT License</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>국립국어원에서 제작한 &quot;역사자료 종합 정비물&quot;에서 보다 편리한 검색을 도모하기 위해 제작된 프로그램입니다.</li>
+</ul>
+<h2 id="1-업데이트-내역">1. 업데이트 내역</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">업데이트일</th>
+<th style="text-align:center">버전명</th>
+<th style="text-align:left">업데이트 내역</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">20220322</td>
+<td style="text-align:center">ver. 1.1.0.</td>
+<td style="text-align:left">Initial Commit</td>
+</tr>
+<tr>
+<td style="text-align:center">20220322</td>
+<td style="text-align:center">ver. 1.0.5.</td>
+<td style="text-align:left">자소검색 와일드카드 문자(*) 오류 수정</td>
+</tr>
+<tr>
+<td style="text-align:center">20220322</td>
+<td style="text-align:center">ver. 1.0.4.</td>
+<td style="text-align:left">에러 핸들링: QMessageBox</td>
+</tr>
+<tr>
+<td style="text-align:center">20220322</td>
+<td style="text-align:center">ver. 1.0.3.</td>
+<td style="text-align:left">Pandas 데이터프레임을 기본 딕셔너리로 변환</td>
+</tr>
+<tr>
+<td style="text-align:center">20220322</td>
+<td style="text-align:center">ver. 1.0.2.</td>
+<td style="text-align:left">자소검색 기능 추가</td>
+</tr>
+<tr>
+<td style="text-align:center">20220317</td>
+<td style="text-align:center">ver. 1.0.1.</td>
+<td style="text-align:left">검색 스트링을 첫가끝으로 변환</td>
+</tr>
+<tr>
+<td style="text-align:center">20220309</td>
+<td style="text-align:center">ver. 1.0.0.</td>
+<td style="text-align:left">Initial Setting</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-사용방법">2. 사용방법</h2>
+<h3 id="1-프로그램-다운로드">1) 프로그램 다운로드</h3>
+<ul>
+<li>깃허브 레포지토리 우측 상단의 'Code'를 클릭 후 'Download ZIP'을 클릭하면 됩니다.</li>
+<li>물론 레포지토리를 바로 클론하셔도 무방합니다.</li>
+</ul>
+<h3 id="2-구성">2) 구성</h3>
+<p>다운로드된/클론된 폴더는 다음과 같이 구성되어 있습니다.</p>
+<ul>
+<li><strong>dict 폴더</strong> : 자소 검색이 가능하도록 도와주는 딕셔너리가 pickle 확장자로 저장되어 있습니다. <strong>해당 폴더와 내용물이 없으면 프로그램이 실행되지 않으므로</strong> 주의해주시기 바랍니다.</li>
+<li><strong>H-side.exe</strong> : 프로그램의 본체입니다. <strong>dict 폴더와 같은 위치에 있지 않으면 역시 실행되지 않으므로</strong> 주의해주세요. 바탕화면에 두신다면, program_H-side 폴더는 다운받은 위치에 남겨두시고 H-side.exe만 바로가기로 따로 빼서 사용하는 것을 권장드립니다.</li>
+<li>img 폴더 : 이 도움말에 사용된 사진이 들어 있는 폴더입니다.</li>
+<li>icon.ico, icon.png : 프로그램을 장식할 아이콘.</li>
+<li><a href="http://README.html">README.md</a>, README.html : 도움말 파일입니다.</li>
+<li><a href="http://main.py">main.py</a>, <a href="http://searching.py">searching.py</a> : H-side.exe를 구성하는 Python 스크립트 파일입니다. 삭제하셔도 무방하고, 분석을 위해 남겨두셔도 좋습니다.</li>
+<li>__pycache__ : Python을 실행하면 알아서 생기는 바이트 파일입니다.</li>
+<li>LICENSE : 라이센스 파일입니다. 해당 프로그램은 <strong>MIT LICENSE</strong>를 준수합니다.</li>
+</ul>
+<h3 id="3-실행">3) 실행</h3>
+<ul>
+<li>클론된 폴더/다운로드해서 압축을 해제한 폴더에서 <strong>H-side.exe</strong>를 더블클릭합니다.</li>
+<li>또는, <strong>직접 빌드</strong>하셔도 됩니다(!!). pyinstaller가 설치되어 있다면, 터미널에서 이 폴더의 경로까지 들어오신 다음 아래의 명령어를 입력해주세요.</li>
+</ul>
+<pre><code class="language-cmd"><div>pyinstaller -F -w --icon=icon.ico --name H-side main.py
+</div></code></pre>
+<h3 id="4-검색">4) 검색</h3>
+<ul>
+<li>
+<p>먼저, direc을 설정해야 합니다. <strong>find dir</strong>을 클릭하신 다음, 역사자료종합정비물이 존재하는 폴더를 열어줍니다.</p>
+<ul>
+<li>이때, 열린 폴더 안에 하위 폴더가 존재하면 안 된다는 점에 유의해 주세요.</li>
+<li>검색할 수 있는 역사자료종합정비물은 .xml이든 .txt이든 상관없으나, <strong>이미 자소 분해가 되어 있는 파일들</strong>이어야 합니다. 즉, 첫가끝 방식으로 변환된 파일들이어야 합니다.</li>
+<li>direc이 비어 있다면, search를 눌러도 경고창이 출력되면서 검색이 되지 않습니다.</li>
+</ul>
+</li>
+<li>
+<p>다음으로, target word 칸을 채워줍니다. target word에는 다음과 같은 형식이 들어갈 수 있습니다.</p>
+<ul>
+<li>일반검색: 평범하게 입력하시면 됩니다.</li>
+<li>자소검색: 옛한글을 입력할 수 없거나, 특별히 자소 단위로 분해해서 입력하고 싶다면 원하는 음절을 '[초성/중성/종성]'으로 둘러싸 주세요. 입력 방식은 유니콩크와 완전하게 동일합니다.</li>
+<li>어떤 검색어를 입력하느냐에 따라 검색 시간이 오래 걸릴 수도 있으므로 주의해주세요. (예: 한 음절로만 입력, 모든 자소에 와일드카드 문자 입력)</li>
+</ul>
+</li>
+<li>
+<p>완료되었다면, search를 눌러주세요. 검색이 완료되면 몇 개가 검색되었는지 알려주는 창이 뜨고, 검색 개수가 하단의 상태바에 표시됩니다.</p>
+<ul>
+<li>검색 결과는 'number - 파일명 - 위치 - 검색된 라인' 순서로 표시됩니다.</li>
+</ul>
+</li>
+</ul>
+<p><img src="file:///d:\GitHub Project\program_H-side\img\figure1.png" alt="figure1"></p>
+<ul>
+<li>검색 결과는 화면에뿐만 아니라 H-side.exe가 존재하는 폴더 안에 <strong>result.txt</strong>라는 이름의 텍스트 파일로도 자동으로 저장이 됩니다.</li>
+</ul>
+<h3 id="5-번외-자소검색-방법">5) 번외: 자소검색 방법</h3>
+<ul>
+<li>H-side에서 자소 검색은 검색 위치에 상관없이 가능합니다. 입력 방식은 다음과 같습니다.
+<ul>
+<li>합용병서, 각자병서, 연서는 모두 단순히 자음을 나열해주면 됩니다.</li>
+<li>아래아는 'ㅏㅏ'로 입력하면 됩니다.</li>
+<li>중성은 모두 분리해서 적을 수 있습니다. 예를 들어, 'ㅟ'는 'ㅜㅣ'로 적을 수 있습니다.</li>
+<li>반치음은 '#ㅅ', 여린히읗은 '#ㅎ', 옛이응은 '#ㅇ'으로 입력하면 됩니다.</li>
+<li>치두음은 '!ㅅ', 정치음은 'ㅅ!'와 같이 입력하시면 됩니다.</li>
+<li>자소검색 도구('[  ]' 기호)안에 옛한글을 넣을 경우 오류가 날 가능성이 높습니다.</li>
+</ul>
+</li>
+<li>자소 검색에서 사용할 수 있는 와일드카드 문자는 다음과 같습니다.
+<ul>
+<li><strong>*</strong> : 해당 위치에 나올 수 있는 모든 소리를 찾습니다. 예를 들어, '[ㄱ/ㅏ/*]'와 같이 입력했다면, 초성이 'ㄱ', 중성이 'ㅏ'인 모든 음절을 찾습니다. '가/강/감/...'등이 나온다고 예상할 수 있겠습니다.</li>
+<li><strong>@</strong> : 해당 위치가 비어있음을 나타냅니다. 이 문자는 중성에서는 사용할 수 없습니다(중성이 비어 있는 소리는 없으니까요).</li>
+</ul>
+</li>
+</ul>
+
+    </body>
+    </html>
