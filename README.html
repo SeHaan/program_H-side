@@ -55,6 +55,7 @@
 <li>국립국어원에서 제작한 &quot;역사자료 종합 정비물&quot;에서 보다 편리한 검색을 도모하기 위해 제작된 프로그램입니다.</li>
 </ul>
 <h2 id="1-업데이트-내역">1. 업데이트 내역</h2>
+<h3 id="1-윈도우즈">1) 윈도우즈</h3>
 <table>
 <thead>
 <tr>
@@ -66,38 +67,63 @@
 <tbody>
 <tr>
 <td style="text-align:center">20220322</td>
-<td style="text-align:center">ver. 1.1.0</td>
+<td style="text-align:center">ver. 1.1.0.</td>
 <td style="text-align:left">Initial Commit</td>
 </tr>
 <tr>
 <td style="text-align:center">20220322</td>
-<td style="text-align:center">ver. 1.0.5</td>
+<td style="text-align:center">ver. 1.0.5.</td>
 <td style="text-align:left">자소검색 와일드카드 문자(*) 오류 수정</td>
 </tr>
 <tr>
 <td style="text-align:center">20220322</td>
-<td style="text-align:center">ver. 1.0.4</td>
+<td style="text-align:center">ver. 1.0.4.</td>
 <td style="text-align:left">에러 핸들링: QMessageBox</td>
 </tr>
 <tr>
 <td style="text-align:center">20220322</td>
-<td style="text-align:center">ver. 1.0.3</td>
+<td style="text-align:center">ver. 1.0.3.</td>
 <td style="text-align:left">Pandas 데이터프레임을 기본 딕셔너리로 변환</td>
 </tr>
 <tr>
 <td style="text-align:center">20220322</td>
-<td style="text-align:center">ver. 1.0.2</td>
+<td style="text-align:center">ver. 1.0.2.</td>
 <td style="text-align:left">자소검색 기능 추가</td>
 </tr>
 <tr>
 <td style="text-align:center">20220317</td>
-<td style="text-align:center">ver. 1.0.1</td>
+<td style="text-align:center">ver. 1.0.1.</td>
 <td style="text-align:left">검색 스트링을 첫가끝으로 변환</td>
 </tr>
 <tr>
 <td style="text-align:center">20220309</td>
-<td style="text-align:center">ver. 1.0.0</td>
+<td style="text-align:center">ver. 1.0.0.</td>
 <td style="text-align:left">Initial Setting</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-맥os">2) 맥OS</h3>
+<ul>
+<li>맥OS 실행파일을 만들 수 있도록 도와주신 <strong>김은진 님</strong>(@eunjinkim)께 감사드립니다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">업데이트일</th>
+<th style="text-align:center">버전명</th>
+<th style="text-align:left">업데이트 내역</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">20220323</td>
+<td style="text-align:center">ver. 1.1.0.</td>
+<td style="text-align:left">Initial Commit</td>
+</tr>
+<tr>
+<td style="text-align:center">20220323</td>
+<td style="text-align:center">ver. 1.0.1.</td>
+<td style="text-align:left">맥OS에 맞도록 코드 수정</td>
 </tr>
 </tbody>
 </table>
@@ -111,7 +137,7 @@
 <p>다운로드된/클론된 폴더는 다음과 같이 구성되어 있습니다.</p>
 <ul>
 <li><strong>dict 폴더</strong> : 자소 검색이 가능하도록 도와주는 딕셔너리가 pickle 확장자로 저장되어 있습니다. <strong>해당 폴더와 내용물이 없으면 프로그램이 실행되지 않으므로</strong> 주의해주시기 바랍니다.</li>
-<li><strong>H-side.exe</strong> : 프로그램의 본체입니다. <strong>dict 폴더와 같은 위치에 있지 않으면 역시 실행되지 않으므로</strong> 주의해주세요. 바탕화면에 두신다면, program_H-side 폴더는 다운받은 위치에 남겨두시고 H-side.exe만 바로가기로 따로 빼서 사용하는 것을 권장드립니다.</li>
+<li><strong>H-side.exe</strong> 또는 <strong>H-side UNIX 실행파일</strong> : 프로그램의 본체입니다. <strong>dict 폴더와 같은 위치에 있지 않으면 역시 실행되지 않으므로</strong> 주의해주세요. 바탕화면에 두신다면, program_H-side 폴더는 다운받은 위치에 남겨두시고 H-side.exe만 바로가기로 따로 빼서 사용하는 것을 권장드립니다.</li>
 <li>img 폴더 : 이 도움말에 사용된 사진이 들어 있는 폴더입니다.</li>
 <li>icon.ico, icon.png : 프로그램을 장식할 아이콘.</li>
 <li><a href="http://README.html">README.md</a>, README.html : 도움말 파일입니다.</li>
@@ -120,36 +146,21 @@
 <li>LICENSE : 라이센스 파일입니다. 해당 프로그램은 <strong>MIT LICENSE</strong>를 준수합니다.</li>
 </ul>
 <h3 id="3-실행">3) 실행</h3>
+<h4 id="가-윈도우즈">가. 윈도우즈</h4>
 <ul>
 <li>클론된 폴더/다운로드해서 압축을 해제한 폴더에서 <strong>H-side.exe</strong>를 더블클릭합니다.</li>
+</ul>
+<h4 id="나-맥os">나. 맥OS</h4>
+<ul>
+<li>클론된 폴더/다운로드해서 압축을 해제한 폴더에서 <strong>H-side UNIX 실행파일</strong>을 더블클릭합니다.</li>
+<li>단, 실행하기 전에 <strong>압축을 해제한 폴더를 최상단에</strong> 올리고, <strong>폴더명을 H-side로</strong> 바꾸어주세요.</li>
+</ul>
+<h4 id="다-나는-내가-직접-빌드해서-사용하겠다">다. 나는 내가 직접 빌드해서 사용하겠다.</h4>
+<ul>
 <li>또는, <strong>직접 빌드</strong>하셔도 됩니다(!!). pyinstaller가 설치되어 있다면, 터미널에서 이 폴더의 경로까지 들어오신 다음 아래의 명령어를 입력해주세요.</li>
 </ul>
 <pre><code class="language-cmd"><div>pyinstaller -F -w --icon=icon.ico --name H-side main.py
 </div></code></pre>
-<ul>
-<li>또한 빌드하기 위해 별도로 설치해야 하는 Python 라이브러리는 아래와 같습니다.</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">name</th>
-<th style="text-align:left">purpose</th>
-<th style="text-align:center">version</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left">PyQt5</td>
-<td style="text-align:left">GUI 구성</td>
-<td style="text-align:center">5.15.6</td>
-</tr>
-<tr>
-<td style="text-align:left">pyinstaller</td>
-<td style="text-align:left">실행파일 빌드</td>
-<td style="text-align:center">4.7</td>
-</tr>
-</tbody>
-</table>
 <h3 id="4-검색">4) 검색</h3>
 <ul>
 <li>
@@ -174,10 +185,17 @@
 <li>검색 결과는 'number - 파일명 - 위치 - 검색된 라인' 순서로 표시됩니다.</li>
 </ul>
 </li>
-</ul>
-<p><img src="file:///d:\GitHub Project\program_H-side\img\figure1.png" alt="figure1"></p>
-<ul>
-<li>검색 결과는 화면에뿐만 아니라 H-side.exe가 존재하는 폴더 안에 <strong>result.txt</strong>라는 이름의 텍스트 파일로도 자동으로 저장이 됩니다.</li>
+<li>
+<p>윈도우즈 예시
+<img src="file:///d:\GitHub Project\program_H-side\img\figure1.png" alt="figure1"></p>
+</li>
+<li>
+<p>맥OS 예시
+<img src="file:///d:\GitHub Project\program_H-side\img\figure2.png" alt="figure2"></p>
+</li>
+<li>
+<p>검색 결과는 화면에뿐만 아니라 H-side.exe가 존재하는 폴더 안에 <strong>result.txt</strong>라는 이름의 텍스트 파일로도 자동으로 저장이 됩니다.</p>
+</li>
 </ul>
 <h3 id="5-번외-자소검색-방법">5) 번외: 자소검색 방법</h3>
 <ul>
