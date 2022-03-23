@@ -19,7 +19,7 @@
 |20220309|ver. 1.0.0.|Initial Setting|
 
 ### 2) 맥OS
-- 맥OS 실행파일을 만들 수 있도록 도와주신 [**김은진 님**\(@eunjinkim\)](https://github.com/eunjiinkim)께 감사드립니다.
+- 맥OS 실행파일을 만들 수 있도록 도와주신 [**김은진 님**\(@eunjiinkim\)](https://github.com/eunjiinkim)께 감사드립니다.
 
 |업데이트일|버전명|업데이트 내역|
 |:-------:|:---:|:----------|
