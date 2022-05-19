@@ -1,14 +1,16 @@
 """
-ver 1.0.5. - 20220322
+ver 1.1.1 - 20220519
 ============================================================
                        업데이트 내역
 ------------------------------------------------------------
-ver. 1.0.5. 자소검색 와일드카드 문자(*) 오류 수정
-ver. 1.0.4. 에러 핸들링: QMessageBox 20220322
-ver. 1.0.3. 판다스 데이터프레임을 딕셔너리로 변환 20220322
-ver. 1.0.2. 자소검색 기능 추가 20220322
-ver. 1.0.1. 검색 스트링을 첫가끝으로 변환 20220317
-ver. 1.0.0. Initial Setting 20220309
+ver. 1.1.1 조합형 문자열도 출력하도록 수정 20220519
+ver. 1.1.0 Initial Commit 20220322
+ver. 1.0.5 자소검색 와일드카드 문자(*) 오류 수정 20220322
+ver. 1.0.4 에러 핸들링: QMessageBox 20220322
+ver. 1.0.3 판다스 데이터프레임을 딕셔너리로 변환 20220322
+ver. 1.0.2 자소검색 기능 추가 20220322
+ver. 1.0.1 검색 스트링을 첫가끝으로 변환 20220317
+ver. 1.0.0 Initial Setting 20220309
 ============================================================
 """
 #%% 모듈 임포팅
@@ -97,7 +99,7 @@ def seperation(findWord, dict_0_ONSET, dict_0_PEAK, dict_0_CODA):
     return findWord
 
 #%% 검색
-def searchForWord(direc, obj_word):
+def searchForWord(direc, obj_word, dict_0_TOTAL):
     sent = re.compile('\<(.*?)\>')
     new_file = "result.txt"
     result_line = ''
@@ -113,11 +115,12 @@ def searchForWord(direc, obj_word):
         text_xml = file_xml.readlines()
 
         for line in text_xml:
-            line = line.replace('\t', '')
-            if re.match(sent, line):
-                pos = re.match(sent, line).group()
+            line_n = PUAtoUni(line, dict_0_TOTAL)
+            line_n = line_n.replace('\t', '')
+            if re.match(sent, line_n):
+                pos = re.match(sent, line_n).group()
                 
-            for word in re.finditer(obj_word, line):
+            for word in re.finditer(obj_word, line_n):
                 page_list = re.findall('page="(.*?)"', pos)
                 if len(page_list) != 0:
                     page = page_list[0]
@@ -126,10 +129,11 @@ def searchForWord(direc, obj_word):
 
                 sta = word.start()
                 end = word.end()
-                new_line = line[:sta] + '▶' + line[sta:end] + '◀' + line[end:]
+                new_line = line_n[:sta] + '▶' + line_n[sta:end] + '◀' + line_n[end:]
                 new_line = re.sub(r'\<(.*?)\>', '', new_line).replace('\n', '')
+                line = re.sub(r'\<(.*?)\>', '', line).replace('\n', '')
 
-                result_line += "[" + str(iter) + "]\t" + file + "\t" + '<' + page + '>\t' + new_line + '\n'
+                result_line += "[" + str(iter) + "]\t" + file + "\t" + '<' + page + '>\t' + line + '\t' + new_line + '\n'
 
                 f.write(result_line)
                 full_text += result_line

@@ -1,14 +1,16 @@
 """
-ver 1.0.5. - 20220322
+ver 1.1.1 - 20220519
 ============================================================
                        업데이트 내역
 ------------------------------------------------------------
-ver. 1.0.5. 자소검색 와일드카드 문자(*) 오류 수정
-ver. 1.0.4. 에러 핸들링: QMessageBox 20220322
-ver. 1.0.3. 판다스 데이터프레임을 딕셔너리로 변환 20220322
-ver. 1.0.2. 자소검색 기능 추가 20220322
-ver. 1.0.1. 검색 스트링을 첫가끝으로 변환 20220317
-ver. 1.0.0. Initial Setting 20220309
+ver. 1.1.1 조합형 문자열도 출력하도록 수정 20220519
+ver. 1.1.0 Initial Commit 20220322
+ver. 1.0.5 자소검색 와일드카드 문자(*) 오류 수정 20220322
+ver. 1.0.4 에러 핸들링: QMessageBox 20220322
+ver. 1.0.3 판다스 데이터프레임을 딕셔너리로 변환 20220322
+ver. 1.0.2 자소검색 기능 추가 20220322
+ver. 1.0.1 검색 스트링을 첫가끝으로 변환 20220317
+ver. 1.0.0 Initial Setting 20220309
 ============================================================
 """
 #%%
@@ -154,7 +156,7 @@ class MainApp(QMainWindow):
                 msgBox = QMessageBox.critical(self, 'Warning', '잘못된 입력입니다!')
                 return
 
-            result_line, iter = searchForWord(dir, target)
+            result_line, iter = searchForWord(dir, target, dict_0_TOTAL)
 
             if result_line == '':
                 msgBox = QMessageBox.critical(self, 'Warning', '검색 결과가 없습니다 ㅜㅡㅜ')

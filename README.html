@@ -2,7 +2,7 @@
     <html>
     <head>
         <meta charset="UTF-8">
-        <title>&#xC5ED;&#xC0AC;&#xBE44;&#xAD50;&#xC5B8;&#xC5B4;&#xD559; &#xD504;&#xB85C;&#xADF8;&#xB7A8; &#xD504;&#xB85C;&#xC81D;&#xD2B8; - H-side</title>
+        <title>&#xc5ed;&#xc0ac;&#xbe44;&#xad50;&#xc5b8;&#xc5b4;&#xd559; &#xd504;&#xb85c;&#xadf8;&#xb7a8; &#xd504;&#xb85c;&#xc81d;&#xd2b8; - H-side</title>
         <style>
 /* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
@@ -29,8 +29,6 @@
         <style>
 .task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
 </style>
-        
-        
         
     </head>
     <body class="vscode-body vscode-light">
@@ -66,38 +64,43 @@
 </thead>
 <tbody>
 <tr>
+<td style="text-align:center">20220519</td>
+<td style="text-align:center">ver. 1.1.1</td>
+<td style="text-align:left">조합형 문자열도 출력하도록 수정</td>
+</tr>
+<tr>
 <td style="text-align:center">20220322</td>
-<td style="text-align:center">ver. 1.1.0.</td>
+<td style="text-align:center">ver. 1.1.0</td>
 <td style="text-align:left">Initial Commit</td>
 </tr>
 <tr>
 <td style="text-align:center">20220322</td>
-<td style="text-align:center">ver. 1.0.5.</td>
+<td style="text-align:center">ver. 1.0.5</td>
 <td style="text-align:left">자소검색 와일드카드 문자(*) 오류 수정</td>
 </tr>
 <tr>
 <td style="text-align:center">20220322</td>
-<td style="text-align:center">ver. 1.0.4.</td>
+<td style="text-align:center">ver. 1.0.4</td>
 <td style="text-align:left">에러 핸들링: QMessageBox</td>
 </tr>
 <tr>
 <td style="text-align:center">20220322</td>
-<td style="text-align:center">ver. 1.0.3.</td>
+<td style="text-align:center">ver. 1.0.3</td>
 <td style="text-align:left">Pandas 데이터프레임을 기본 딕셔너리로 변환</td>
 </tr>
 <tr>
 <td style="text-align:center">20220322</td>
-<td style="text-align:center">ver. 1.0.2.</td>
+<td style="text-align:center">ver. 1.0.2</td>
 <td style="text-align:left">자소검색 기능 추가</td>
 </tr>
 <tr>
 <td style="text-align:center">20220317</td>
-<td style="text-align:center">ver. 1.0.1.</td>
+<td style="text-align:center">ver. 1.0.1</td>
 <td style="text-align:left">검색 스트링을 첫가끝으로 변환</td>
 </tr>
 <tr>
 <td style="text-align:center">20220309</td>
-<td style="text-align:center">ver. 1.0.0.</td>
+<td style="text-align:center">ver. 1.0.0</td>
 <td style="text-align:left">Initial Setting</td>
 </tr>
 </tbody>
@@ -117,12 +120,12 @@
 <tbody>
 <tr>
 <td style="text-align:center">20220323</td>
-<td style="text-align:center">ver. 1.1.0.</td>
+<td style="text-align:center">ver. 1.1.0</td>
 <td style="text-align:left">Initial Commit</td>
 </tr>
 <tr>
 <td style="text-align:center">20220323</td>
-<td style="text-align:center">ver. 1.0.1.</td>
+<td style="text-align:center">ver. 1.0.1</td>
 <td style="text-align:left">맥OS에 맞도록 코드 수정</td>
 </tr>
 </tbody>
@@ -157,10 +160,44 @@
 </ul>
 <h4 id="다-나는-내가-직접-빌드해서-사용하겠다">다. 나는 내가 직접 빌드해서 사용하겠다.</h4>
 <ul>
-<li>또는, <strong>직접 빌드</strong>하셔도 됩니다(!!). pyinstaller가 설치되어 있다면, 터미널에서 이 폴더의 경로까지 들어오신 다음 아래의 명령어를 입력해주세요.</li>
-</ul>
+<li>또는, <strong>직접 빌드</strong>하셔도 됩니다(!!). 빌드하기 전에, 컴퓨터에 아래 버전의 파이썬과 그 라이브러리가 설치되어 있는지 확인해주세요.
+<ul>
+<li>
+<p>Python 3.9.6 이상</p>
+</li>
+<li>
+<p>필수 라이브러리</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Module</th>
+<th style="text-align:center">version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">pandas</td>
+<td style="text-align:center">1.3.5</td>
+</tr>
+<tr>
+<td style="text-align:center">pyinstaller</td>
+<td style="text-align:center">4.7</td>
+</tr>
+<tr>
+<td style="text-align:center">PyQt5</td>
+<td style="text-align:center">5.15.6</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>터미널에서 이 폴더의 경로까지 들어오신 다음 아래의 명령어를 입력해주세요.</p>
 <pre><code class="language-cmd"><div>pyinstaller -F -w --icon=icon.ico --name H-side main.py
 </div></code></pre>
+</li>
+</ul>
+</li>
+</ul>
 <h3 id="4-검색">4) 검색</h3>
 <ul>
 <li>
@@ -182,7 +219,7 @@
 <li>
 <p>완료되었다면, search를 눌러주세요. 검색이 완료되면 몇 개가 검색되었는지 알려주는 창이 뜨고, 검색 개수가 하단의 상태바에 표시됩니다.</p>
 <ul>
-<li>검색 결과는 'number - 파일명 - 위치 - 검색된 라인' 순서로 표시됩니다.</li>
+<li>검색 결과는 'number - 파일명 - 위치 - <strong>검색된 라인(완성형)</strong> - <strong>검색된 라인(조합형)</strong>' 순서로 표시됩니다. 단, 맥OS에서는 기술 문제로 인해 완성형 라인을 지원하지 않습니다.</li>
 </ul>
 </li>
 <li>
@@ -194,7 +231,7 @@
 <img src="file:///d:\GitHub Project\program_H-side\img\figure2.png" alt="figure2"></p>
 </li>
 <li>
-<p>검색 결과는 화면에뿐만 아니라 H-side.exe가 존재하는 폴더 안에 <strong>result.txt</strong>라는 이름의 텍스트 파일로도 자동으로 저장이 됩니다.</p>
+<p>검색 결과는 화면에뿐만 아니라 H-side.exe가 존재하는 폴더 안에 <strong>result.txt</strong>라는 이름의 텍스트 파일로도 자동으로 저장이 됩니다. 해당 파일은 항목들이 탭(tab)으로 구분되어 있기 때문에, csv나 엑셀 파일로 다시 저장하실 수도 있습니다.</p>
 </li>
 </ul>
 <h3 id="5-번외-자소검색-방법">5) 번외: 자소검색 방법</h3>
@@ -217,5 +254,7 @@
 </li>
 </ul>
 
+        
+        
     </body>
     </html>
